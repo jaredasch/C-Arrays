@@ -24,7 +24,7 @@ int main(){
     // Populate array in reverse with pointers
 
     int pointy_nums[10];
-    int * end_point = &nums[9];
+    int * end_point = nums + 9;    // Set pointer to end of nums array
 
     for(int i = 0; i < 10; i++){
         *(pointy_nums+i) = *(end_point-i);
